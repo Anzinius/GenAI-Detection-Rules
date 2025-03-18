@@ -1,4 +1,9 @@
+# Sigma 변환기 사용 (Sigma 룰 -> SIEM 변환)
 PyYAML
 sigmatools
+
+# YARA 룰 검증
 yara-python
+
+# Snort 로그 분석 (PCAP 파일 핸들링)
 scapy
