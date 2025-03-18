@@ -1,0 +1,4 @@
+PyYAML
+sigmatools
+yara-python
+scapy
