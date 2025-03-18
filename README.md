@@ -40,3 +40,24 @@
 - `yara/`: YARA 룰과 테스트용 악성코드 샘플
 - `snort_suricata/`: Snort & Suricata 룰과 테스트 패킷
 - `scripts/`: Python 탐지 코드 (`sigmac` 변환, 로그 검사, Snort 탐지 테스트 등)
+
+
+
+#### 실습 환경 준비
+
+1. ChatGPT (API 또는 무료버전)
+    
+1. python 설치 **✔생성한 룰 검증을 위해 필요**
+    
+    설치 방법 (Windows / Mac / Linux 공통)
+    
+    - https://www.python.org/downloads/
+    
+    - Windows에서는 설치 시 "Add Python to PATH"
+    
+    - Mac/Linux에서는 아래 명령어 실행:
+    
+      ```bash
+      sudo apt update && sudo apt install python3 python3-pip  # Ubuntu
+      brew install python  # Mac (Homebrew 사용)
+      ```

@@ -1,0 +1,27 @@
+{
+    "query": {
+      "constant_score": {
+        "filter": {
+          "bool": {
+            "should": [
+              {
+                "match_phrase": {
+                  "cs-uri-query": "' OR '1'='1"    
+                }
+              },
+              {
+                "match_phrase": {
+                  "cs-uri-query": "\" OR \"1\"=\"1"
+                }
+              },
+              {
+                "match_phrase": {
+                  "cs-uri-query": "UNION SELECT"   
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }

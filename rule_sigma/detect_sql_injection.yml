@@ -1,0 +1,14 @@
+title: Detect SQL Injection in Apache Logs
+logsource:
+  category: webserver
+  product: apache
+detection:
+  selection:
+    cs-uri-query:
+      - "' OR '1'='1"
+      - '" OR "1"="1'
+      - 'UNION SELECT'
+  condition: selection
+falsepositives:
+  - Legitimate applications using similar queries
+level: medium
